@@ -1,0 +1,643 @@
+@font-face {
+  font-family: 'Produkt';
+  src: url('assets/Produkt-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Produkt';
+  src: url('assets/Produkt-Bold.otf') format('otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Produkt';
+  src: url('assets/Produkt-LightItalic.otf') format('otf');
+  font-weight: 300;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+/*the grid code - use it as a reference*/
+.g-wrap {
+  /*outline: 1px solid #333*/;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col-grid:after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+/*home page*/
+
+.header {
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 100vw;
+  height:150px;
+  background: #fafafa;
+}
+
+.h-wrap{
+  /*outline: 1px solid #333*/;
+  max-width: 960px;
+  padding-top: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  /*outline: 1px solid #333*/;
+  width: 111px;
+  height: 111px;
+/*  background-image: url("../Logo.png");
+  background-size: cover;*/
+}
+
+.logo img {
+  width: 111px;
+  height: 111px;
+}
+
+a {
+  color:inherit;
+  text-decoration: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+h1 {
+  font-family: 'Produkt';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.hero-image h2 {
+  font-family: 'Produkt';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin-left:30px;
+  margin-top: 20px;
+}
+
+.hero-image p{
+  font-family: 'Produkt';
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 42px;
+  margin-left:30px;
+}
+
+
+.hero-image {
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 100vw;
+  height:571px;
+  background-image: url("../imgs/BG - Birthday Cake Cinnamon Roll.jpg");
+  background-size: cover;
+}
+
+.tr-bg {
+  position: absolute;
+  margin-left: 185px;
+  margin-top: 234px;
+  width: 408px;
+  height: 267px;
+  background: rgba(255,255,255,0.85);
+}
+
+.sm-hero-image-container {
+  display: flex;
+  justify-content: center;
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 100vw;
+  height:263px;
+  /*background: #f1f1f1;*/
+}
+
+.sm-hero-image{
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 50vw;
+  height:263px;
+  
+}
+
+.sm-hero-image h3{
+  font-family: 'Produkt';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin-left:30px;
+  margin-top: 20px;
+}
+
+.sm-hero-image p{
+  font-family: 'Produkt';
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+  margin-left:30px;
+}
+
+.-discount-img {
+  background-image: url("../imgs/BG - Discount.jpg");
+  background-size: cover;
+}
+
+.-activities-img {
+  background-image: url("../imgs/BG - Activities.jpg");
+  background-size: cover;
+}
+
+
+.sm-tr-bg{
+  position: absolute;
+  width: 302px;
+  height: 126px;
+  background: rgba(255,255,255,0.85);
+}
+
+.discount{
+  margin-left: 193px;
+  margin-top: 20px;
+}
+
+.activities{
+  margin-left: 150px;
+  margin-top: 20px;
+}
+
+
+.footer {
+  /*outline: 1px solid #333*/;
+  margin:auto;
+  width: 100vw;
+  height:166px;
+  background: #fafafa;
+}
+
+.footer h4 {
+  font-family: 'Produkt';
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 0.5em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+    margin-top: 30px;
+}
+
+.footer p {
+  font-family: 'Produkt';
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-size: 0.2em;
+  letter-spacing: 2px;
+  line-height: 1.5em;
+}
+
+.f-wrap{
+  /*outline: 1px solid #333*/;
+  max-width: 960px;
+  margin-top: 20px;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact {
+  /*outline: 1px solid #333*/;
+  height:auto;
+  width: auto;
+}
+
+
+/*Browsing Product Page*/
+.shopping-cart {
+  /*outline: 1px solid #333*/; solid #333;
+  width: 49px;
+  height: 42px;
+}
+
+button {
+  border:none;
+  /*outline: 1px solid #333*/;
+  width:143px;
+  height:47px;
+  border-radius: 0;
+  background:#d8d8d8;
+}
+
+#main-title h1,h5{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sn- {
+  /*flex helps th*/
+  display: flex;
+  /*outline: 1px solid #333*/;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.sn- .sn-grid .product-card {
+  /*outline: 1px solid #333*/;
+  width: calc(960px / 71 * 35);
+  float: left;
+  background: transparent;
+  margin-right:calc(960px / 71);
+  height: 251px;
+  margin-bottom:40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.pd-view {
+  /*outline: 1px solid #333*/;
+  width: 251px;
+  height: 251px;
+}
+
+/*all images here*/
+
+.birthday-cake{
+  background-image: url("../imgs/12 - Birthday Cake.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+.original{
+  background-image: url("../imgs/6 - Original.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.original-vegan{
+  background-image: url("../imgs/5 - Original (Vegan).jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.original-gluten-free{
+  background-image: url("../imgs/4 - Original (Gluten Free).jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+.maple-apple-pecan{
+  background-image: url("../imgs/1 - Maple Apple Pecan.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.strawberry-rhubarb{
+  background-image: url("../imgs/11 - Strawberry Rhubarb.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.pumpkin-spice{
+  background-image: url("../imgs/7 - Pumpkin Spice.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.caramel-pecan{
+  background-image: url("../imgs/8 - Caramel Pecan.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.carrot-cake{
+  background-image: url("../imgs/9 - Carrot Cake.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.cranberry{
+  background-image: url("../imgs/14 - cranberry.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.lemon-lavender{
+  background-image: url("../imgs/13 - Lemon Lavendar.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.walnut{
+  background-image: url("../imgs/3 - Walnut.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.blackberry{
+  background-image: url("../imgs/15 - Blackberry.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+.old-fashioned-buttermilk{
+  background-image: url("../imgs/10 - Old Fashioned Buttermilk.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+.bacon{
+  background-image: url("../imgs/2 - Bacon.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+/*images end*/
+
+.pd-detail {
+  /*outline: 1px solid #333*/;
+  width:223px;
+  height:251px;
+  display: block;
+}
+
+
+
+.pd-title {
+  /*outline: 1px solid #333*/;
+  width: 100%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+}
+
+.pd-title h6 {
+  margin-left: 15px;
+  font-family: "Produkt";
+  font-weight: bold;
+}
+
+.pd-quotemark {
+  /*outline: 1px solid #333*/;
+  width: 100%;
+  height: 28px;
+  display: flex;
+  align-items: center;
+}
+
+.pd-quotemark p {
+  margin:auto;
+  font-family: "Produkt";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pd-quote {
+  /*outline: 1px solid #333*/;
+  width: calc(100%-15px);
+  height: 122px;
+  margin-left: 15px;
+}
+
+.pd-quote q {
+  font-family: "Produkt";
+  line-height: 1.5em;
+}
+
+.pd-button {
+  /*outline: 1px solid #333*/;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.pd-button button {
+  padding: 0;
+  margin-left:138px;
+  width:84px;
+  height:24px;
+  font-family: "Produkt";
+  font-weight: 300;
+  outline: none;
+  background:transparent;
+}
+
+button,a:hover {
+  cursor: pointer;
+}
+
+.sn- .sn-grid .product-card:nth-child(2n) {
+  margin-right: 0;
+  float: right;
+}
+
+/*the last two elements don't have the bottom padding*/
+.sn- .sn-grid .product-card:nth-last-of-type(-n+2) {
+  margin-bottom: 0;
+}
+
+/*Product Detail Page*/
+
+body.-product-detail:after{
+  position:fixed;
+  width: 100vw
+  height:100vh;
+  content:"";
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background:rgba(0,0,0,0.75);
+  z-index:1;
+}
+
+.pd-wrapper {
+  position:fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  /*justify-content: center;*/
+  width:calc(960px / 71 * 67);
+  top:40px;
+  margin-left: 17.5vw;
+  /*outline: 1px solid #fff;*/
+  z-index: 2;
+}
+
+.close {
+  display: flex;
+  /*outline: 1px solid #fff;*/
+  width:40px;
+  height:40px;
+  margin:0 auto 50px auto;
+}
+
+.pd-wrapper .product-detail-card {
+  /*outline: 1px solid #fff;*/
+  display: flex;
+  align-items: center;
+  width: inherit;
+  height:500px;
+  margin: auto;
+  background: #fff;
+}
+
+.pd-d-img {
+  /*outline: 1px solid #fff;*/
+  width: 430px;
+  height: 100%;
+}
+
+.amp {
+  background-image: url("../imgs/PI - 2 - Birthday Cake.jpg");
+  background-size: cover;
+}
+
+.pd-d-info-container {
+  /*position: absolute;*/
+  /*outline: 1px solid #fff;*/;
+  height: 462px;
+  width: 438px;
+  margin-left:20px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.pd-d-title {
+  /*outline: 1px solid #fff;*/;
+  width: 100%;
+  height: 64px;
+}
+
+.pd-d-price {
+  /*outline: 1px solid #fff;*/;
+  width: 100%;
+  height: 54px;
+}
+
+.pd-d-ingredient{
+  /*outline: 1px solid #fff;*/;
+  width: 100%;
+  height: 256px;
+}
+
+.pd-d-qty{
+  /*outline: 1px solid #fff;*/;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.count-box {
+  margin-left: 300px;
+  outline: 1px solid #333;
+  width: 73px;
+  height: 45px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.pd-d-button{
+  /*outline: 1px solid #fff;*/;
+  width: 100%;
+  height: 45px;
+}
+
+.pd-d-button button {
+  width: 100%;
+  height: 100%
+}
+
+
+
+/* Photo credits 
+
+1 - Apple Maple Pecan 
+http://www.simplyrecipes.com/wp-content/uploads/2006/02/cinnamon-sticky-buns-600.jpg
+
+2 - Bacon
+https://images-gmi-pmc.edge-generalmills.com/1aa7553e-78c9-45c8-a1cd-49086c3e213b.jpg
+
+3 - Walnut 
+https://i1.wp.com/www.servedfromscratch.com/wp-content/uploads/2015/10/Sourdough-Walnut-Cinnamon-Rolls.jpg
+
+4 - Original (Gluten Free)
+http://recreatinghappiness.com/wp-content/uploads/2013/08/Cinnamon-Roll-W-1024x868.jpg
+
+5 - Original (Vegan)
+http://ohsheglows.com/wp-content/uploads/2017/05/vegancinnamonrollsovernight-6968.jpg
+
+6 - Original
+https://roadfood.com/wp-content/uploads/2016/03/rfl_12704.jpg
+
+7 - Pumpkin Spice
+http://www.threeolivesbranch.com/wp-content/uploads/2016/10/pumpkin-spice-cinnamon-rolls-1.jpg
+
+8 - Caramel Pecan https://www.rhodesbread.com/blog/images/2015/100515/Microwave_Caramel_Pecan_Cinnamon_Rolls_01.jpg
+
+9 - Carrot Cake
+http://thecolorfulkitchen.com/wp-content/uploads/2015/02/Carrot-Cake-Cinnamon-Rolls-Vegan-Gluten-Free-2.jpg
+
+10 - Old FashionedButtermilk
+https://i.pinimg.com/736x/d3/a2/b8/d3a2b8f4462642a5f8bd9b8508afcb55--biscuit-cinnamon-rolls-buttermilk-cinnamon-rolls.jpg
+
+11 - Strawberry Rhubarb
+http://eatdrinkshrink.com/wp-content/uploads/DSC_0057-1-1.jpg
+
+12 - Birthday Cake
+https://www.thelittleepicurean.com/wp-content/uploads/2016/07/birthday-funfetti-cinnamon-rolls-3.jpg
+
+13 - Lemon Lavender
+http://siftandwhisk.com/wp-content/uploads/2014/05/LemonLavenderStickyBuns04.jpg
+
+14 - cranberry
+https://www.twopeasandtheirpod.com/wp-content/uploads/2010/10/cranberry-orange-roll.jpg
+
+15 - Blackberry
+https://familymealblog.files.wordpress.com/2014/07/blackberry-lime-cinnamon-roll-cross-section.jpg
+
+*/
